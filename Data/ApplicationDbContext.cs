@@ -12,5 +12,11 @@ using school_5.Models;
         {
         }
 
-        public DbSet<school_5.Models.Student> Student { get; set; } = default!;
+        // Each DB set maps to a table in the database
+      
+        public DbSet<school_5.Models.Student> Student { get; set; }
+
+        public DbSet<school_5.Models.Test>? Test { get; set; }
+        
+        public DbSet<school_5.Models.TestResult> TestResults { get; set; }
     }
